@@ -50,7 +50,19 @@ class Movies {
 class IronMan extends Movies {
 
 	public IronMan() {
-		super("IRONMAN");
+		super("IRONMAN","Robert Downy JR");
+	}
+
+	public String plot() {
+		return "ashhwekhfkjh";
+	}
+
+}
+
+class BLackPanther extends Movies {
+
+	public BLackPanther() {
+		super("BLACKPANTHER","Chadwick Boseman");
 	}
 
 	public String plot() {
