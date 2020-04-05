@@ -69,6 +69,15 @@ class Thor extends Movies {
 	public String plot() {
 		return "Thunder God with Hammer";
 	}
+class CaptainAmerica extends Movies {
+
+	public CaptainAmerica() {
+		super("CAPTAINAMERICA", "Cris Havens");
+	}
+
+	public String plot() {
+		return "Captain America: The First Avenger with Vibrenium Shield";
+	}
     
 
 }
