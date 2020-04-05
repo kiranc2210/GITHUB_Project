@@ -6,9 +6,8 @@ public class GitHubProject {
 			try {
 				Movies movie = randomMovies();
 
-				System.out
-						.println("MovieName #" + i + ":" + movie.getName() + "\n" + 
-				                 "Plot" + ":" + movie.plot() + "\n");
+				System.out.println("MovieName #" + i + ":" + movie.getName() + "\n" + 
+				                 "Plot" + ":" + movie.plot() + "\n"+"MainCast"+":"+movie.getHero()+"\n");
 			} catch (NullPointerException np) {
 				System.out.println("NO Movies Available");
 			}
@@ -29,9 +28,11 @@ public class GitHubProject {
 class Movies {
 
 	private String name;
+	private String hero;
 
 	public Movies(String name) {
 		this.name = name;
+		this.hero = hero;
 	}
 
 	public String plot() {
@@ -40,6 +41,9 @@ class Movies {
 
 	public String getName() {
 		return name;
+	}
+	public String getHero() {
+		return hero;
 	}
 }
 
