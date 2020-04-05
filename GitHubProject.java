@@ -29,9 +29,12 @@ public class GitHubProject {
 class Movies {
 
 	private String name;
+	private String hero
+       
 
-	public Movies(String name) {
+	public Movies(String name, String hero) {
 		this.name = name;
+		this.hero = hero;
 	}
 
 	public String plot() {
@@ -46,7 +49,7 @@ class Movies {
 class IronMan extends Movies {
 
 	public IronMan() {
-		super("IRONMAN");
+		super("IRONMAN","Robert Downy JR");
 	}
 
 	public String plot() {
@@ -57,7 +60,7 @@ class IronMan extends Movies {
 class Thor extends Movies {
 
 	public Thor() {
-		super("THOR")
+		super("THOR", "Cris Hamsworth")
 	}
 
 	public String plot() {
