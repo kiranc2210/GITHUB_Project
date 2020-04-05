@@ -7,11 +7,13 @@ public class GitHubProject {
 				Movies movie = randomMovies();
 
 
+
 				System.out.println("MovieName #" + i + ":" + movie.getName() + "\n" + 
 				                 "Plot" + ":" + movie.plot() + "\n"+"HERO"+":"+movie.getHero()+"\n");
 
 				
 
+>
 			} catch (NullPointerException np) {
 				System.out.println("NO Movies Available");
 			}
@@ -35,6 +37,8 @@ class Movies {
 	private String hero;
 
 
+
+
 	public Movies(String name, String hero) {
 		this.name = name;
 		this.hero = hero;
@@ -47,6 +51,7 @@ class Movies {
 	public String getName() {
 		return name;
 	}
+
 	public String getHero() {
 		return hero;
 	}
@@ -55,6 +60,7 @@ class Movies {
 class IronMan extends Movies {
 
 	public IronMan() {
+
 		super("IRONMAN","Robert Downy JR");
 
 	}
@@ -70,6 +76,8 @@ class BLackPanther extends Movies {
 	public BLackPanther() {
 		super("BLACKPANTHER","Chadwick Boseman");
 
+		super("IRONMAN", "Robert Downy JR");
+
 	}
 
 	public String plot() {
@@ -77,6 +85,7 @@ class BLackPanther extends Movies {
 	}
 
 }
+
 class Thor extends Movies {
 
 	public Thor() {
@@ -86,6 +95,8 @@ class Thor extends Movies {
 	public String plot() {
 		return "Thunder God with Hammer";
 	}
+}
+
 class CaptainAmerica extends Movies {
 
 	public CaptainAmerica() {
@@ -95,7 +106,9 @@ class CaptainAmerica extends Movies {
 	public String plot() {
 		return "Captain America: The First Avenger with Vibrenium Shield";
 	}
-    class Hulk extends Movies {
+}
+
+class Hulk extends Movies {
 
 	public Hulk() {
 		super("HULK", "MArk Raffelow");
@@ -104,5 +117,15 @@ class CaptainAmerica extends Movies {
 	public String plot() {
 		return "man with effected by Gama Rediation make him to beast when get angry";
 	}
+}
 
+class Wolverin extends Movies {
+
+	public Wolverin() {
+		super("WOLVERIN", "HUGE Jackman");
+	}
+
+	public String plot() {
+		return "Wolf man with Healing power most powerfull hero in Marvel usinverse";
+	}
 }
