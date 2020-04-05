@@ -6,8 +6,12 @@ public class GitHubProject {
 			try {
 				Movies movie = randomMovies();
 
+
 				System.out.println("MovieName #" + i + ":" + movie.getName() + "\n" + 
 				                 "Plot" + ":" + movie.plot() + "\n"+"HERO"+":"+movie.getHero()+"\n");
+
+				
+
 			} catch (NullPointerException np) {
 				System.out.println("NO Movies Available");
 			}
@@ -30,7 +34,8 @@ class Movies {
 	private String name;
 	private String hero;
 
-	public Movies(String name) {
+
+	public Movies(String name, String hero) {
 		this.name = name;
 		this.hero = hero;
 	}
@@ -51,6 +56,7 @@ class IronMan extends Movies {
 
 	public IronMan() {
 		super("IRONMAN","Robert Downy JR");
+
 	}
 
 	public String plot() {
@@ -63,10 +69,23 @@ class BLackPanther extends Movies {
 
 	public BLackPanther() {
 		super("BLACKPANTHER","Chadwick Boseman");
+
 	}
 
 	public String plot() {
-		return "ashhwekhfkjh";
+		return "Man With Metal Suit and Exteam knowledge";
 	}
+
+}
+class Thor extends Movies {
+
+	public Thor() {
+		super("THOR", "Cris Hamsworth");
+	}
+
+	public String plot() {
+		return "Thunder God with Hammer";
+	}
+    
 
 }
