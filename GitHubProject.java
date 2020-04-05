@@ -7,7 +7,7 @@ public class GitHubProject {
 				Movies movie = randomMovies();
 
 				System.out.println("MovieName #" + i + ":" + movie.getName() + "\n" + 
-				                 "Plot" + ":" + movie.plot() + "\n"+"MainCast"+":"+movie.getHero()+"\n");
+				                 "Plot" + ":" + movie.plot() + "\n"+"HERO"+":"+movie.getHero()+"\n");
 			} catch (NullPointerException np) {
 				System.out.println("NO Movies Available");
 			}
