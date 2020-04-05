@@ -5,15 +5,8 @@ public class GitHubProject {
 		for (int i = 0; i < 11; i++) {
 			try {
 				Movies movie = randomMovies();
-
-
-
-				System.out.println("MovieName #" + i + ":" + movie.getName() + "\n" + 
-				                 "Plot" + ":" + movie.plot() + "\n"+"HERO"+":"+movie.getHero()+"\n");
-
-				
-
->
+				System.out.println("MovieName #" + i + ":" + movie.getName() + "\n" + "Plot" + ":" + movie.plot() + "\n"
+						+ "HERO" + ":" + movie.getHero() + "\n");
 			} catch (NullPointerException np) {
 				System.out.println("NO Movies Available");
 			}
@@ -26,6 +19,16 @@ public class GitHubProject {
 		switch (rand) {
 		case 1:
 			return new IronMan();
+		case 2:
+			return new BLackPanther();
+		case 3:
+			return new Thor();
+		case 4:
+			return new CaptainAmerica();
+		case 5:
+			return new Hulk();
+		case 6:
+			return new Wolvarin();
 		}
 		return null;
 	}
@@ -35,9 +38,6 @@ class Movies {
 
 	private String name;
 	private String hero;
-
-
-
 
 	public Movies(String name, String hero) {
 		this.name = name;
@@ -61,7 +61,7 @@ class IronMan extends Movies {
 
 	public IronMan() {
 
-		super("IRONMAN","Robert Downy JR");
+		super("IRONMAN", "Robert Downy JR");
 
 	}
 
@@ -74,10 +74,7 @@ class IronMan extends Movies {
 class BLackPanther extends Movies {
 
 	public BLackPanther() {
-		super("BLACKPANTHER","Chadwick Boseman");
-
-		super("IRONMAN", "Robert Downy JR");
-
+		super("BLACKPANTHER", "Chadwick Boseman");
 	}
 
 	public String plot() {
@@ -119,10 +116,10 @@ class Hulk extends Movies {
 	}
 }
 
-class Wolverin extends Movies {
+class Wolvarin extends Movies {
 
-	public Wolverin() {
-		super("WOLVERIN", "HUGE Jackman");
+	public Wolvarin() {
+		super("WOLVARIN", "HUGE Jackman");
 	}
 
 	public String plot() {
