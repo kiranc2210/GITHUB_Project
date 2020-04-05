@@ -8,7 +8,7 @@ public class GitHubProject {
 
 				System.out
 						.println("MovieName #" + i + ":" + movie.getName() + "\n" + 
-				                 "Plot" + ":" + movie.plot() + "\n");
+				                 "Plot" + ":" + movie.plot() + "\n"+"MainCast"+":"+movie.getHero()+"\n");
 			} catch (NullPointerException np) {
 				System.out.println("NO Movies Available");
 			}
@@ -29,7 +29,7 @@ public class GitHubProject {
 class Movies {
 
 	private String name;
-	private String hero
+	private String hero;
        
 
 	public Movies(String name, String hero) {
@@ -43,6 +43,9 @@ class Movies {
 
 	public String getName() {
 		return name;
+	}
+	public String getHero() {
+		return hero;
 	}
 }
 
@@ -60,11 +63,12 @@ class IronMan extends Movies {
 class Thor extends Movies {
 
 	public Thor() {
-		super("THOR", "Cris Hamsworth")
+		super("THOR", "Cris Hamsworth");
 	}
 
 	public String plot() {
 		return "Thunder God with Hammer";
 	}
+    
 
 }
