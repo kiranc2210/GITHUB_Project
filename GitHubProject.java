@@ -50,7 +50,18 @@ class IronMan extends Movies {
 	}
 
 	public String plot() {
-		return "ashhwekhfkjh";
+		return "Man With Metal Suit and Exteam knowledge";
+	}
+
+}
+class Thor extends Movies {
+
+	public Thor() {
+		super("THOR")
+	}
+
+	public String plot() {
+		return "Thunder God with Hammer";
 	}
 
 }
