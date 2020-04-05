@@ -78,6 +78,14 @@ class CaptainAmerica extends Movies {
 	public String plot() {
 		return "Captain America: The First Avenger with Vibrenium Shield";
 	}
-    
+    class Hulk extends Movies {
+
+	public Hulk() {
+		super("HULK", "MArk Raffelow");
+	}
+
+	public String plot() {
+		return "man with effected by Gama Rediation make him to beast when get angry";
+	}
 
 }
